@@ -40,8 +40,8 @@ letting the model drive all four instruments to work out why.
 ## Install
 
 ```sh
-git clone https://github.com/colingimenez/scpi-mcp.git
-cd scpi-mcp
+git clone https://github.com/colingimenez/SCPI_MCP.git
+cd SCPI_MCP
 uv sync
 ```
 
@@ -65,7 +65,7 @@ source. Set only the ones you have.
   "mcpServers": {
     "scpi": {
       "command": "uv",
-      "args": ["--directory", "/path/to/scpi-mcp", "run", "main.py"],
+      "args": ["--directory", "/path/to/SCPI_MCP", "run", "main.py"],
       "env": {
         "SCPI_OSC_HOST": "192.0.2.10",
         "SCPI_PSU_HOST": "192.0.2.11"
@@ -91,3 +91,7 @@ it.
 Oscilloscope screenshot capture is written against the Siglent SDS1202X-E,
 which streams a raw image with no length header and no terminator. Other scopes
 implement this differently and may need their own path.
+
+## License
+
+MIT.
